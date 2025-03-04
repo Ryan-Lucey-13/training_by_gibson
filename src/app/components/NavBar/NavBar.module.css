@@ -1,0 +1,166 @@
+.TBGNavBar {
+  display: flex;
+  background: #768958;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.TBGLogo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin: 0px 0px 0px 30px;
+  font-family: 'Poppins';
+}
+
+.TBGLinks {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1;
+  color: #000;
+}
+.TBGLinks a.active {
+  color: #fff;
+}
+.TBGLinks a:hover {
+  color: #353839;
+}
+.TBGNavBar button {
+  margin-right: 30px;
+}
+.TBGNavBar a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+.TBGHamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.TBGHamburger.active .hamburgerLine:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.TBGHamburger.active .hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.TBGHamburger.active .hamburgerLine:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .TBGLinks {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    flex-grow: 1;
+    color: #000;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    border: .5px solid #000;
+    visibility: hidden;
+    opacity: 0;
+    border-top: 3px solid #000;
+    margin-right: 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px); 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0s ease 0.3s;
+  }
+
+  .TBGLinks.active {
+    visibility: visible;
+    opacity: 1; 
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .TBGLinks a.active {
+    color: #768958;
+  }
+  .TBGHamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  .TBGNavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .TBGNavBar button {
+    margin-right: 0px;
+    white-space: nowrap;
+  }
+
+  .TBGLogo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+    width: auto;
+    max-width: 100%;
+    line-height: .8;
+  }
+
+  .TBGLinks {
+    width: 100%;
+    padding-top: 10px;
+    top: 62px;
+    right: 0;
+    }
+
+  .TBGLinks p {
+    font-size: 18px;
+  }
+
+  .TBGHamburger {
+    margin-right: 15px;
+    order: 2;
+  }
+  .SignUpButton {
+    order: 1;
+  }
+}
+
+@media (max-width: 430px) {
+  .TBGLogo {
+    max-width: 150px;
+  }
+  .TBGLinks {
+    width: 100%;
+    top: 62px;
+    right: 0;
+  }
+}

@@ -1,0 +1,192 @@
+.TBGContactHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6)),
+    url('/images/track.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.TBGContactHeader h1 {
+  font-family: poppins;
+  color: #fff;
+}
+.TBGContactHeader p {
+  color: #fff;
+}
+.TBGContactHeaderLeft {
+  flex: 1;
+  margin-left: 50px;
+  padding: 10px 0 25px 0;
+}
+.TBGContactHeaderRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  padding: 20px 0 25px 0;
+}
+.TBGContactHeaderImage, .TBGContactSectionImage {
+  max-width: 80%;
+  height: 200px;
+  border-radius: 8px;
+  border: 5px solid #fff;
+}
+.TBGContactSocialsPanel {
+  flex: 1;
+  background-color: #D9D9D9;
+  padding: 10px 0 25px 0;
+}
+.TBGContactSocialsPanel h2, .TBGContactSocialsPanel p, .TBGContactSocialsPanel img {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.TBGContactSocialsPanel h2 {
+  font-family: 'Poppins';
+}
+.TBGInstagramIcon {
+  height: 30px;
+  width: 30px;
+}
+.TBGContactResultsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #768958;
+}
+.TBGContactResultsSectionLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+  margin-left: 30px;
+}
+.TBGContactResultsSectionLeft p {
+  color: #313638;
+}
+.TBGContactResultsSectionRight {
+  flex: 2;
+  margin-left: 50px;
+  padding: 10px 0 10px 0;
+}
+.TBGContactResultsSectionRight h4 {
+  color: #0e1111;
+}
+.TBGContactResultsSectionRight p {
+  margin: 0;
+  font-size: 12px;
+  color: #0e1111;
+}
+.TBGContactResultsSectionImage {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+@media (max-width: 768px) {
+  .TBGContactHeader {
+    padding: 0px 20px 5px 20px;
+  }
+
+  .TBGContactHeaderLeft, .TBGContactHeaderRight {
+    flex: 1;
+    text-align: flex-start;
+    margin: 10px 0;
+  }
+
+  .TBGContactHeaderImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .TBGContactSocialsPanel {
+    margin-top: 0px;
+  }
+
+  .TBGContactSocialsPanel h2, .TBGContactSocialsPanel p {
+    text-align: left;
+  }
+
+  .TBGContactResultsSection {
+    margin-top: 5px;
+  }
+
+  .TBGContactResultsSectionLeft, .TBGContactResultsSectionRight {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+  .TBGContactResultsSectionRight {
+    margin-left: 10px;
+  }
+  .TBGContactResultsSectionImage {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .TBGContactHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px 0px 20px;
+  }
+  .TBGContactHeader h1 {
+    margin-top: 10px;
+  }
+  .TBGContactHeaderLeft, .TBGContactHeaderRight {
+    flex: 1;
+    text-align: flex-start;
+    margin: 0px 0;
+  }
+  .TBGContactHeaderLeft {
+    padding: 0 0 0px 0;
+  }
+  .TBGContactHeaderRight {
+    padding: 0 0 20px 0;
+  }
+  .TBGContactHeaderImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .TBGContactSocialsPanel {
+    margin-top: 0px;
+  }
+
+  .TBGContactSocialsPanel h2, .TBGContactSocialsPanel p {
+    text-align: left;
+  }
+
+  .TBGInstagramIcon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .TBGContactResultsSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TBGContactResultsSectionLeft, .TBGContactResultsSectionRight {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0px 0;
+  }
+
+  .TBGContactResultsSectionImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .TBGContactResultsSectionRight p {
+    font-size: 10px;
+  }
+  .TBGContactResultsSectionRight h4 {
+    margin: 0 0 5px 0;
+  }
+}

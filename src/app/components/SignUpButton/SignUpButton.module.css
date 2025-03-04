@@ -1,0 +1,15 @@
+.TBGSignupButton {
+	background: #000000;
+	color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 8px;
+	padding: 10px 20px;
+	margin: 0px 0px 0px 0px;
+	font-family: 'Poppins';
+	transition: 0.3s background-color ease, 0.3s border-color ease;
+}
+.TBGSignupButton:hover {
+	background-color: #353839;
+	border-color: #353839;
+	cursor: pointer;
+}
