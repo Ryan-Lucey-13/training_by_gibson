@@ -9,7 +9,7 @@ collections:
     files:
     - label: "Home"
       name: "home"
-      file: "content/home.md"
+      file: "src/content/home.md"
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Description", name: "description", widget: "text" }
@@ -32,7 +32,7 @@ collections:
 
     - label: "About"
       name: "about"
-      file: "content/about.md"
+      file: "src/content/about.md"
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -42,7 +42,7 @@ collections:
 
     - label: "Services"
       name: "services"
-      file: "content/services.md"
+      file: "src/content/services.md"
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -57,7 +57,7 @@ collections:
 
     - label: "Results"
       name: "results"
-      file: "content/results.md"
+      file: "src/content/results.md"
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -73,7 +73,7 @@ collections:
     
     - label: "Contact"
       name: "contact"
-      file: "content/contact.md"
+      file: "src/content/contact.md"
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Subtitle", name: "subtitle", widget: "string" }
