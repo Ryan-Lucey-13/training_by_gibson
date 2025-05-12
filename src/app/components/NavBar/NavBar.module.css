@@ -26,11 +26,14 @@
   flex-grow: 1;
   color: #000;
 }
+.TBGLinks a {
+  color: #000;
+}
 .TBGLinks a.active {
   color: #fff;
 }
 .TBGLinks a:hover {
-  color: #353839;
+  color: #fff;
 }
 .TBGNavBar button {
   margin-right: 30px;
@@ -39,10 +42,6 @@
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
-}
-a:visited {
-  color: inherit;
-  text-decoration: inherit;
 }
 .TBGHamburger {
   display: none;
@@ -101,6 +100,9 @@ a:visited {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
   .TBGLinks a.active {
+    color: #768958;
+  }
+  .TBGLinks a:hover {
     color: #768958;
   }
   .TBGHamburger {

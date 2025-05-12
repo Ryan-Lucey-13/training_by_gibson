@@ -1,0 +1,101 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/images
+public_folder: images
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Home"
+      name: "home"
+      file: "content/home.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Description", name: "description", widget: "text" }
+        - { label: "Image", name: "image", widget: "image" }
+
+        - { label: "About Title", name: "aboutTitle", widget: "string" }
+        - { label: "About Text", name: "aboutText", widget: "text" }
+        - { label: "About Image", name: "aboutImage", widget: "image" }
+
+        - { label: "Services Header", name: "servicesHeader", widget: "string" }
+
+        - label: "Services"
+          name: "services"
+          widget: "list"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Text", name: "text", widget: "text" }
+            - { label: "Image", name: "image", widget: "image" }
+            - { label: "Link", name: "link", widget: "string" }
+
+    - label: "About"
+      name: "about"
+      file: "content/about.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Subtitle", name: "subtitle", widget: "string" }
+        - { label: "Header Image", name: "headerImage", widget: "image" }
+        - { label: "Section Title", name: "sectionTitle", widget: "string" }
+        - { label: "Body", name: "body", widget: "markdown" }
+
+    - label: "Services"
+      name: "services"
+      file: "content/services.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Subtitle", name: "subtitle", widget: "string" }
+        - { label: "Header Image", name: "headerImage", widget: "image" }
+        - label: "Sections"
+          name: "sections"
+          widget: "list"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Text", name: "text", widget: "text" }
+            - { label: "Image", name: "image", widget: "image" }
+
+    - label: "Results"
+      name: "results"
+      file: "content/results.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Subtitle", name: "subtitle", widget: "string" }
+        - { label: "Header Image", name: "headerImage", widget: "image" }
+        - label: "Reviews"
+          name: "reviews"
+          widget: "list"
+          fields:
+            - { label: "Name", name: "name", widget: "string" }
+            - { label: "Location", name: "location", widget: "string" }
+            - { label: "Review", name: "review", widget: "text" }
+            - { label: "Image", name: "image", widget: "image" }
+    
+    - label: "Contact"
+      name: "contact"
+      file: "content/contact.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Subtitle", name: "subtitle", widget: "string" }
+        - { label: "Header Image", name: "headerImage", widget: "image" }
+        - label: "Testimonial"
+          name: "testimonial"
+          widget: "object"
+          fields:
+            - { label: "Review", name: "review", widget: "text" }
+            - { label: "Name", name: "name", widget: "string" }
+            - { label: "Location", name: "location", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
+        - label: "Socials"
+          name: "socials"
+          widget: "object"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subtitle", name: "subtitle", widget: "string" }
+            - label: "Links"
+              name: "links"
+              widget: "list"
+              fields:
+                - { label: "Platform", name: "platform", widget: "string" }
+                - { label: "Link URL", name: "href", widget: "string" }
+                - { label: "Icon Image", name: "icon", widget: "image" }

@@ -14,8 +14,13 @@ export default function TwoPanelFooter() {
       </div>
       <div className={styles.TBGSocialsPanel}>
         <h2>Stay Updated</h2>
-        <p>Follow Gibson on social media and gets and tricks on how to improve your well-being</p>
-        <img className={styles.TBGInstagramIcon} src="/images/instagram.png" alt="instagram"/>
+        <p>Follow Gibson on social media and get tips and tricks on how to improve your well-being!</p>
+        <a href="https://www.instagram.com/gibblesnyc/" target="_blank" rel="noopener noreferrer" className={styles.TBGSocialsLinks}>
+          <img className={styles.TBGSocialsIcon} src="/images/instagram.png" alt="instagram link"/>
+        </a>
+        <a href="https://www.tiktok.com/@gibblesnyc" target="_blank" rel="noopener noreferrer" className={styles.TBGSocialsLinks}>
+          <img className={styles.TBGSocialsIcon} src="/images/tiktok.png" alt="tiktok link"/>
+        </a>
       </div>
     </div>
   );

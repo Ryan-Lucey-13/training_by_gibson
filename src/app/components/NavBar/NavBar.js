@@ -41,7 +41,9 @@ export default function NavBar() {
   }
   return (
       <nav className={styles.TBGNavBar}>
-        <h1 className={`${styles.TBGLogo}`}>TRAINING BY GIBSON</h1>
+        <Link href='/'>
+          <h1 className={`${styles.TBGLogo}`}>TRAINING BY GIBSON</h1>
+        </Link>
           <div className={`${styles.TBGHamburger} ${isOpen ? styles.active : ''}`} onClick={toggleNavBar} ref={hamburgerRef}>
             <div className={styles.hamburgerLine}></div>
             <div className={styles.hamburgerLine}></div>

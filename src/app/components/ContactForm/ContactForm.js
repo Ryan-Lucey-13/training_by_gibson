@@ -25,9 +25,9 @@ export default function ContactForm() {
   function handleContactFormSubmit(e) {
     e.preventDefault()
 
-    const serviceID = 'service_45epnth'
-    const templateID = 'template_42eqygq'
-    const userID = 'qkxk7Xq__kuqy6IQu'
+    const serviceID = 'service_qub9by6'
+    const templateID = 'template_9m2o026'
+    const userID = '_aWR5-Chn9aMl9Th6'
 
     emailjs
       .sendForm(serviceID, templateID, e.target, userID)

@@ -26,7 +26,16 @@
 .TBGSocialsPanel h2 {
 	font-family: 'Poppins';
 }
-.TBGInstagramIcon {
-	height: 30px;
-	width: 30px;
+
+.TBGSocialsIcon {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	width: 40px;
+}
+@media (max-width: 500px) {
+	.TBGSocialsIcon {
+		margin-top: 5px;
+	}
 }

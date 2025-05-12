@@ -3,7 +3,6 @@ import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from './components/NavBar/NavBar.js';
 import Footer from './components/Footer/Footer.js';
-import TwoPanelFooter from './components/TwoPanelFooter/TwoPanelFooter.js';
 
 const poppins = Poppins({
     weight: ['600'],
